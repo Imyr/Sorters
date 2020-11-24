@@ -40,9 +40,9 @@ def CheckerMover(Filename):
     QualityDirectory = os.path.join(Destination_Path, UserExtractor(Filename), TitleExtractor(Filename), QualityExtractor(Filename))
     if not os.path.exists(QualityDirectory):
         os.mkdir(QualityDirectory)
-    print ("Stfu, Moving... " + Filename + " right now!)
+    print ("Stfu, moving... " + Filename + " right now!")
     shutil.move(Source_Path + Filename, QualityDirectory)
-    print ("Done, bitch!)
+    print ("Done, bitch!")
 for i in Filenames:
     CheckerMover(i)
 
