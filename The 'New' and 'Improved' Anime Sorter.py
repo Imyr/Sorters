@@ -2,6 +2,10 @@ import os
 import shutil
 import time
 
+'''
+Source_Path = "E:/TEST/SOURCE/"
+Destination_Path = "E:/TEST/DEST/"
+'''
 Source_Path = "H:/Anime/Airing/"
 Destination_Path = "H:/Anime/Auto Synced/"
 
@@ -53,19 +57,12 @@ def CheckerMover(Filename):
 StartTime = time.time()
 
 for i in range(len(Filenames)):
-    print ("Moving " + Filenames[i] + " right now... ")
-    CheckerMover(Filenames[i])
-    print (i + 1, " of ", len(Filenames), " done!")
+    try:
+        print ("Moving " + Filenames[i] + " right now... ")
+        CheckerMover(Filenames[i])
+        print (i + 1, " of ", len(Filenames), " done!")
+    except Exception as e:
+        print (f"{e} for {i}")
 
 EndTime = time.time()
 print("Finished sorting in: ", EndTime - StartTime)
- 
-
-
-
-    
-                                                
-                
-                
-                
-                
