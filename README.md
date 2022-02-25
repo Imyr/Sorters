@@ -1,5 +1,5 @@
-# Anime-Sorter
-Python script to sort your files a very specific way.
+# Sorters
+Collection of sorters I made to make my life a little bit easier.
 
 # Disclaimer
 This repository is for research purposes only, the use of this code is your responsibility.
