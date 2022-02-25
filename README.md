@@ -1,5 +1,5 @@
 # Sorters
-Collection of sorters I made to make my life a little bit easier.
+Sorters I tried making in Python.
 
 # Disclaimer
 This repository is for research purposes only, the use of this code is your responsibility.
