@@ -5,14 +5,14 @@ import re
 
 # Made another anime sorter, this time regex based. This one works better IMO.
 # I've tried to add examples and links to each regex, just to sort of make it easier to understand.
-# Did a small (15720 sample size) test, and it didn't sort 0.37% of the files. I guess it's okay.
+# Did a small (15720 sample size) test, and it didn't sort 0.37% (57) of the files. I guess it's okay.
 # Unsorted files get pushed to (Dest. Folder/~Unsorted).
 
 SOURCE_FOLDER = "H:/Anime/Airing/"
 DESTINATION_FOLDER = "H:/Anime/Synced/"
 
 # Matches {Group} {Title} ~~episode_number_and_other_junk~~  {Quality}
-#https://regex101.com/r/Ri7a3n/2
+# https://regex101.com/r/Ri7a3n/2
 REGEX_1 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][v\_\.\-\~0-9\s]+?[Episode]*?[Volume]*?[END]*?[OVA]*?[OAD]*?[v\_\.\-\~0-9\s]*?[\[\(].*?([0-9]{3,4}x[0-9]{3,4}|[0-9]{3,4}[pi]).*?[\]\)]"
 
 # Matches {Group} {Title} ~~episode_number_and_other_junk~~
