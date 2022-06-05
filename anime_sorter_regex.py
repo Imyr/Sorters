@@ -77,9 +77,9 @@ for i in range(len(Filenames)):
         else:
             print(f"Headed towards unsorted...")
             shutil.move(os.path.join(SOURCE_FOLDER, Filenames[i]), os.path.join(DESTINATION_FOLDER, "~Unsorted"))
-        print (f"{i + 1} of {len(Filenames)} processed!", end="\n\n")
     except Exception as e:
         print (f"{e} for {Filenames[i]}")
+    print (f"{i + 1} of {len(Filenames)} processed!", end="\n\n")
 
 EndTime = time.time()
 print(f"Finished processing in: {EndTime - StartTime}")
