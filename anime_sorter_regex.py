@@ -12,24 +12,24 @@ SOURCE_FOLDER = "H:/Anime/Airing/"
 DESTINATION_FOLDER = "H:/Anime/Synced/"
 
 # Matches {Group} {Title} ~~episode_number_and_other_junk~~  {Quality}
-# https://regex101.com/r/Ri7a3n/2
-REGEX_1 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][v\_\.\-\~0-9\s]+?[Episode]*?[Volume]*?[END]*?[OVA]*?[OAD]*?[v\_\.\-\~0-9\s]*?[\[\(].*?([0-9]{3,4}x[0-9]{3,4}|[0-9]{3,4}[pi]).*?[\]\)]"
+# https://regex101.com/r/Ri7a3n/3
+REGEX_1 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][S0-9]*?[Season]*?[Part]*?[v\_\.\-\~0-9\s]+?[Episode]*?[Volume]*?[END]*?[OVA]*?[OAD]*?[v\_\.\-\~0-9\s]*?[\[\(].*?([0-9]{3,4}x[0-9]{3,4}|[0-9]{3,4}[pi]).*?[\]\)]"
 
 # Matches {Group} {Title} ~~episode_number_and_other_junk~~
-# https://regex101.com/r/Pkgbu6/2
-REGEX_2 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][v\_\.\-\~0-9\s]+?[Episode]*?[Volume]*?[END]*?[OVA]*?[OAD]*?[v\_\.\-\~0-9\s]*?[\[\(].*?[\]\)]"
+# https://regex101.com/r/Pkgbu6/3
+REGEX_2 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][S0-9]*?[Season]*?[Part]*?[v\_\.\-\~0-9\s]+?[Episode]*?[Volume]*?[END]*?[OVA]*?[OAD]*?[v\_\.\-\~0-9\s]*?[\[\(].*?[\]\)]"
 
 # Matches {Group} {Title} {Quality}
-# https://regex101.com/r/qK47yd/2
-REGEX_3 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][\[\(].*?([0-9]{3,4}x[0-9]{3,4}|[0-9]{3,4}[pi]).*?[\]\)]"
+# https://regex101.com/r/qK47yd/3
+REGEX_3 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][S0-9]*?[Season]*?[Part]*?[\[\(].*?([0-9]{3,4}x[0-9]{3,4}|[0-9]{3,4}[pi]).*?[\]\)]"
 
 # Matches {Group} {Title} ~~other_garbage_between_brackets~~
-# https://regex101.com/r/f77fbz/2
-REGEX_4 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][\[\(].*?[\]\)]"
+# https://regex101.com/r/f77fbz/3
+REGEX_4 = r"\[(.+?)\][\.\s\_](.+?)[\.\s\_][S0-9]*?[Season]*?[Part]*?[\[\(].*?[\]\)]"
 
 # Matches {Group} {Title} ~~other_garbage~~
-# https://regex101.com/r/sUo6hF/2
-REGEX_5 = r"^\[(.+?)\][\.\s\_](.+?)[\.\s\_][v\_\.\-\~0-9\s]*?$"
+# https://regex101.com/r/sUo6hF/3
+REGEX_5 = r"^\[(.+?)\][\.\s\_](.+?)[\.\s\_][S0-9]*?[Season]*?[Part]*?[v\_\.\-\~0-9\s]*?$"
 
 # Gunsmith Cats [BD.1080p] [Iznjie Biznjie], 
 # Could make one more regex for this one, but nah.
